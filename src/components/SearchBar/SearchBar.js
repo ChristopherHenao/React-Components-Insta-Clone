@@ -6,6 +6,9 @@ import { faHeart, faCircle, faCompass } from '@fortawesome/free-regular-svg-icon
 import "./SearchBar.css";
 
 const SearchBar = (props) => {
+
+  const {posts} = props
+
   return (
     <div className="search-bar-wrapper">
       <div className="social">
@@ -31,5 +34,13 @@ const SearchBar = (props) => {
     </div>
   );
 };
+
+// const array = [2, 4, 6, 8, 10]
+// const filteredArray = array.filter(numberYouWantBack => {numberYouWantBack > 5})
+// filteredArray will contain [6, 8, 10] 
+
+
+// const filteredPost = posts.filter(post => {post.username === })
+// filteredArray will contain [6, 8, 10] 
 
 export default SearchBar;
